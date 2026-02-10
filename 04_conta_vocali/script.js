@@ -4,11 +4,12 @@ const word = 'javascript';
 // Dichiara la funzione qui
 function vowels(value) {
     const vowelsHolder = [];
-    for (let i = 0; i < value.length; i++)
-        if (value[i] === 'a' || value[i] === 'e' || value[i] === 'i' || value[i] === 'o' || value[i] === 'u') {
+    for (let i = 0; i < value.length; i++) {
+        if (value[i].toLowerCase() === 'a' || value[i].toLowerCase() === 'e' || value[i].toLowerCase() === 'i' || value[i].toLowerCase() === 'o' || value[i].toLowerCase() === 'u') {
             vowelsHolder.push(value[i])
         }
-    return vowelsHolder.length
+}
+return vowelsHolder.length
 }
 
 // Invoca la funzione qui e stampa il risultato in console
@@ -18,11 +19,12 @@ console.log(vowels(word));
 // ARROW FUNCTION 
 const vowelS = (value) => {
     const vowelsHolderA = [];
-    for (let i = 0; i < value.length; i++)
-        if (value[i] === 'a' || value[i] === 'e' || value[i] === 'i' || value[i] === 'o' || value[i] === 'u') {
+    for (let i = 0; i < value.length; i++) {
+        if (value[i].toLowerCase() === 'a' || value[i].toLowerCase() === 'e' || value[i].toLowerCase() === 'i' || value[i].toLowerCase() === 'o' || value[i].toLowerCase() === 'u') {
             vowelsHolderA.push(value[i])
         }
-    return vowelsHolderA.length
+}
+return vowelsHolderA.length
 }
 console.log(vowelS(word));
 
