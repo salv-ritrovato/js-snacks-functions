@@ -2,14 +2,14 @@
 const userName = 'Mario';
 
 // Dichiara la funzione qui.
-function waveAt() {
-    const salute = 'Ciao' + ' ' + userName
+function waveAt(name) {
+    const salute = 'Ciao' + ' ' + name
     return salute
 }
 // Invoca la funzione qui e stampa il risultato in console
 // Risultato atteso se si passa 'Mario': // ciao Mario
-console.log(waveAt());
+console.log(waveAt(userName));
 
 // ARROW FUNCTION 
-const hello = userName => 'Ciao ' + userName;
+const hello = (name) => 'Ciao ' + name;
 console.log(hello("Mario"));

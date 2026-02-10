@@ -7,14 +7,14 @@ e buonasera se è sera (oltre le 17)
 const name = 'Mario';
 
 // Dichiara la funzione qui.
-function waveHour() {
+function waveHour(person) {
     const timeDate = new Date().getHours();
     if (timeDate <= 13) {
-        return 'Buongiorno' + ' ' + name;
+        return 'Buongiorno' + ' ' + person;
     } else if (timeDate <= 17) {
-        return "Buon Pomeriggio" + ' ' + name;
+        return "Buon Pomeriggio" + ' ' + person;
     } else {
-        return "Buonasera" + ' ' + name;
+        return "Buonasera" + ' ' + person;
     }
 }
 
